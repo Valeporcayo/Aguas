@@ -7,3 +7,8 @@ struct Validaciones {
       .evaluate(with: correo)
   }
 }
+
+// contraseña pero con validacion de longitud
+static func contrasennaEsValida(_ contrasenna: String) -> Bool {
+  return contrasenna.count >= 8
+}

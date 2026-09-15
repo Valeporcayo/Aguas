@@ -1,0 +1,9 @@
+import Foundation
+
+struct Validaciones {
+  static func correoEsValido(_ correo:String) -> Bool {
+    let patron = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+    return NSPredicate(format: "SELF MATCHES %@", patron)
+      .evaluate(with: correo)
+  }
+}

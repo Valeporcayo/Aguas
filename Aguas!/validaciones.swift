@@ -12,3 +12,8 @@ struct Validaciones {
 static func contrasennaEsValida(_ contrasenna: String) -> Bool {
   return contrasenna.count >= 8
 }
+
+// checar si han dejado un campo vacio
+static func campoVacio(_ texto: String) -> Bool {
+  return texto.trimmingCharacters(in: .whitespaces).isEmpty
+}

@@ -1,5 +1,6 @@
 import Foundation
 
+// funcion para validar si un correo es adecuado/valido dentro de los caracteres permitidos
 struct Validaciones {
   static func correoEsValido(_ correo:String) -> Bool {
     let patron = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
